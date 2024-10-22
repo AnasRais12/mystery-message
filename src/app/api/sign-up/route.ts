@@ -52,6 +52,7 @@ export async function POST(request: Request) {
         isVerified: false,
         isAcceptmessage: true,
         message: [],
+
       });
       await userNew.save();
     }
@@ -72,6 +73,7 @@ export async function POST(request: Request) {
       {
         success: true,
         message: "User Register Suceesfully Please Enter Your  Verifycode ",
+       
       },
       { status: 200 }
     );
